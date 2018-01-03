@@ -2,7 +2,15 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="varPersistentID:{01AFC3AE-3296-44BA-8B9B-D4ECB8A95641}" Type="Ref">/Target/DriverJoystick.lvlib/RT</Property>
+	<Property Name="varPersistentID:{0BE6C32B-98A3-4E93-BC0F-5EE6A7515406}" Type="Ref">/Target/DriverJoystick.lvlib/Y</Property>
+	<Property Name="varPersistentID:{8826F451-0226-41D1-9097-A582DBAEC1C7}" Type="Ref">/Target/DriverJoystick.lvlib/X</Property>
+	<Property Name="varPersistentID:{A88C1F48-BFFD-4278-A27C-3FE018FADE58}" Type="Ref">/Target/DriverJoystick.lvlib/RB</Property>
+	<Property Name="varPersistentID:{AED4DF53-A9A9-4541-A00B-FBBB5A381DCA}" Type="Ref">/Target/DriverJoystick.lvlib/LT</Property>
 	<Property Name="varPersistentID:{D0D57046-7A85-4E32-8DEB-A47943673FE3}" Type="Ref">/Target/DevRefs.lvlib/Drive DevRef Out</Property>
+	<Property Name="varPersistentID:{D21F0B23-010C-4B4D-975A-7A93D060584A}" Type="Ref">/Target/DriverJoystick.lvlib/LB</Property>
+	<Property Name="varPersistentID:{D87AC2D3-90D9-49A5-BF5F-D777FA867A24}" Type="Ref">/Target/DriverJoystick.lvlib/B</Property>
+	<Property Name="varPersistentID:{E8D7F546-1FD8-42BF-97D1-66BC42E55A08}" Type="Ref">/Target/DriverJoystick.lvlib/A</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -129,6 +137,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Drive_Loop_Command.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Drive/Drive_Code_V2/Drive_Loop_Command.vi"/>
 		<Item Name="Drive_Loop_Control_Loop.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Drive/Drive_Code_V2/Drive_Loop_Control_Loop.vi"/>
 		<Item Name="Drive_Loop_Initialize.vi" Type="VI" URL="/&lt;userlib&gt;/836-Library/Drive/Drive_Code_V2/Drive_Loop_Initialize.vi"/>
+		<Item Name="DriverJoystick.lvlib" Type="Library" URL="../../../../../Documents/DriverJoystick.lvlib"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -482,6 +491,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_MotorControlRefNum Compare.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Compare.vi"/>
 				<Item Name="WPI_MotorControlRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Get.vi"/>
 				<Item Name="WPI_MotorControlRefNum Registry Read Name.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Read Name.vi"/>
+				<Item Name="WPI_MotorControlRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Set.vi"/>
 				<Item Name="WPI_MotorControlSafetyCheck.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlSafetyCheck.vi"/>
 				<Item Name="WPI_MotorControlSafetyError.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlSafetyError.vi"/>
 				<Item Name="WPI_MotorControlSafetyUpdate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlSafetyUpdate.vi"/>
@@ -547,6 +557,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesTimebaseConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesTimebaseConstants.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
+			<Item Name="Control 1.ctl" Type="VI" URL="../Control 1.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
